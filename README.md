@@ -2,17 +2,15 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6552684.svg)](https://doi.org/10.5281/zenodo.6552684)
 
-A CSV dataset representing [JACS 3.0](https://www.hesa.ac.uk/support/documentation/jacs) subject areas, principal subjects, and detailed subject codes in a unified dataset.
+A dataset representing [JACS 3.0](https://www.hesa.ac.uk/support/documentation/jacs) subject areas, principal subjects, and detailed subject codes in a unified dataset, in CSV and JSON.
 
-## Data file
+## Data files
 
-The dataset is contained in a single CSV file: [`flatJACS_3.0.csv`](flatJACS_3.0.csv).
-
-## How to use the data
-
-The CSV file can be used as a tabular dataset as is.
+The dataset is contained in single files in CSV and JSON: [`flatJACS_3.0.csv`](flatJACS_3.0.csv), [`flatJACS_3.0.json`](flatJACS_3.0.json).
 
 ## Data set documentation
+
+### CSV
 
 | **Column name** | **Description** |
 | -- | -- |
@@ -30,6 +28,49 @@ The CSV file can be used as a tabular dataset as is.
 In this version of the dataset, the two columns differ in one value only:
 - **Q160** is *British Sign Language* in JACS 3.0, and *Sign Languages* in flatJACS 3.0, to encompass all sign languages, rather than just the British Sign Language. This differentiation is necessary to make flatJACS 3.0 applicable to subject categorization outside of the United Kingdom (for which the JACS 3.0 codes have originally been created).
 
+### JSON
+
+The JSON file has the following structure:
+
+```json
+
+{
+    "areas": [
+        {
+            "code": <subject area code>,
+            "name": <subject area name>,
+            "subareas": [
+                {
+                    "code": <subject subarea code>,
+                    "name": <subject subarea name>,
+                    "principal-subjects": [
+                        {
+                            "code": <principal subject code>,
+                            "name": <principal subject name>,
+                            "detailed-codes": [
+                                {
+                                    "code": <detailed subject code>,
+                                    "JACS-code": <detailed subject name>,
+                                    "flatJACS-code": <adapted detailed subject name>
+                                },
+                                ...
+                            ]
+                        },
+                        ...
+                    ]
+                },
+                ...
+            ]
+        },
+        ...
+    ]
+}
+```
+
+- `"areas"` describe areas as per the *principal* subject codes website.
+- `"subareas"` describe subareas. These refer to areas as per the *detailed* subject codes website. Often, these are 1:1 equivalents to `"areas"`.
+- `"principal-subjects"` describe principal subjects as per the *principal* subject codes website|
+- `"detailed-codes"` describe detailed subjects, and provide a code as well as the original JACS as well as the adapted flatJACS name for the subject.
 
 ## Attribution
 
