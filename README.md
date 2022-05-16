@@ -1,6 +1,6 @@
 # flatJACS 3.0
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6552685.svg)](https://doi.org/10.5281/zenodo.6552685)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6552684.svg)](https://doi.org/10.5281/zenodo.6552684)
 
 A CSV dataset representing [JACS 3.0](https://www.hesa.ac.uk/support/documentation/jacs) subject areas, principal subjects, and detailed subject codes in a unified dataset.
 
