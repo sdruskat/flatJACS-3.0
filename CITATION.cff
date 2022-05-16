@@ -15,11 +15,11 @@ authors:
     orcid: 'https://orcid.org/0000-0003-4925-7248'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.6553424
-    description: The DOI resolving to version 1.0.1 of flatJACS 3.0
+    value: 10.5281/zenodo.6554291
+    description: The DOI resolving to version 1.1.0 of flatJACS 3.0
 repository-code: 'https://github.com/sdruskat/flatJACS-3.0'
 abstract: >-
-  A CSV dataset representing JACS 3.0 subject areas,
+  A CSV and JSON dataset representing JACS 3.0 subject areas,
   principal subjects, and detailed subject codes in a
   unified dataset.
 keywords:
@@ -29,5 +29,5 @@ keywords:
   - JACS
   - JACS 3.0
 license: CC-BY-4.0
-version: '1.0.1'
+version: '1.1.0'
 date-released: '2022-05-16'
