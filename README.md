@@ -57,7 +57,7 @@ See the [Contributing](#contributing) section for details.
 
 ## License
 
-![CC BY 4.0 badge](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png)
+![CC BY 4.0 badge](https://licensebuttons.net/l/by/3.0/80x15.png)
 
 This dataset is distributed using the
 [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/legalcode.en).
