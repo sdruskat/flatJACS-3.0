@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: flatJACS 3.0
+message: Please cite this dataset using these metadata.
+type: dataset
+authors:
+  - given-names: Stephan
+    family-names: Druskat
+    email: stephan.druskat@dlr.de
+    affiliation: >-
+      German Aerospace Center (DLR),
+      Humboldt-Universität zu Berlin
+    orcid: 'https://orcid.org/0000-0003-4925-7248'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.6552685
+    description: The DOI resolving to version 1 of flatJACS 3.0
+repository-code: 'https://github.com/sdruskat/flatJACS-3.0'
+abstract: >-
+  A CSV dataset representing JACS 3.0 subject areas,
+  principal subjects, and detailed subject codes in a
+  unified dataset.
+keywords:
+  - research domains
+  - taxonomy
+  - JSON-LD
+  - JACS
+  - JACS 3.0
+license: CC-BY-4.0
+version: '1'
+date-released: '2022-05-16'
